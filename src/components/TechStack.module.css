@@ -1,0 +1,90 @@
+.techSection {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--box-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    background-color: var(--box-bg-hover);
+    border-color: var(--brand-color);
+    box-shadow: 0 10px 30px -10px var(--brand-color);
+}
+
+.logoWrapper {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    font-family: var(--font-geist-mono), monospace;
+}
+
+.icon {
+    color: var(--brand-color);
+    /* Colored by default */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover .icon,
+.card:focus-within .icon {
+    filter: drop-shadow(0 0 10px var(--brand-color));
+}
+
+.techName {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--secondary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.card:hover .techName {
+    color: var(--primary);
+}

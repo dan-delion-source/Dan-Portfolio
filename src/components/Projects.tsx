@@ -10,6 +10,7 @@ type ProjectType = {
     tools: string[];
     githubUrl: string;
     liveUrl: string;
+    image: string;
 };
 
 const projects: ProjectType[] = [
@@ -19,6 +20,7 @@ const projects: ProjectType[] = [
         tools: ["C", "Typescript", "Node.js"],
         githubUrl: "https://github.com/dan-delion-source/Minecraft-Seed-Map",
         liveUrl: "https://minecraft-seed-map.vercel.app",
+        image: "/projects/Minecraft.png",
     },
     {
         title: "Phishing URL Detection System",
@@ -26,6 +28,7 @@ const projects: ProjectType[] = [
         tools: ["AI/ML", "Python", "Pandas", "Numpy"],
         githubUrl: "https://github.com/dan-delion-source/AI-Based-Phishing-URL-Detection-System",
         liveUrl: "https://ai-based-phishing-url-detection-sys.vercel.app/",
+        image: "/projects/Phishing.png",
     },
     {
         title: "Simple Weather Forcast",
@@ -33,6 +36,15 @@ const projects: ProjectType[] = [
         tools: ["Html", "Css", "JavaScript"],
         githubUrl: "https://github.com/dan-delion-source/Simple-Weather-Forcast",
         liveUrl: "https://simple-weather-forcast.vercel.app",
+        image: "/projects/Weather.png",
+    },
+    {
+        title: "Youtube Downloader",
+        description: "A simple youtube downloader web application that allows mp4 and mp3 downloads.",
+        tools: ["Typescript", "Yt-dlp", "Node.js"],
+        githubUrl: "https://github.com/dan-delion-source/Youtube-Downloader",
+        liveUrl: "https://youtube-downloader-one-tau.vercel.app/",
+        image: "/projects/Youtube.png",
     },
 ];
 
@@ -61,7 +73,7 @@ export default function Projects() {
                             transition={{ type: "spring", stiffness: 100, damping: 15, delay: index * 0.1 }}
                         >
                             <div className={styles.imagePlaceholder}>
-                                <span>[ 16:9 Image Placeholder ]</span>
+                                <img src={project.image} alt={project.title} className={styles.projectImage} />
                             </div>
 
                             <div className={styles.cardHeader}>

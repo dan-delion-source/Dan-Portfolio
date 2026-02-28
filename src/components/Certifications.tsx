@@ -27,8 +27,18 @@ const certifications: CertificationType[] = [
         year: "2025",
     },
     {
-        name: "Network Security Fundamentals",
+        name: "Linux 100:Fundamentals",
         issuer: "TCM",
+        year: "2025",
+    },
+    {
+        name: "Cisco Certified Support Technician Cybersecurity",
+        issuer: "Cisco",
+        year: "2025",
+    },
+    {
+        name: "Java Programming Fundamentals",
+        issuer: "Infosys",
         year: "2025",
     },
 ];

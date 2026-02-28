@@ -18,7 +18,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className={styles.heroSection}>
+        <section className={styles.heroSection} id="hero">
             {init && (
                 <Particles
                     id="tsparticles"

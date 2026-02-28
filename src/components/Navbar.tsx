@@ -18,6 +18,7 @@ export default function Navbar() {
         { name: "About Me", href: "#about" },
         { name: "Tech Stack", href: "#tech-stack" },
         { name: "Projects", href: "#projects" },
+        { name: "Blog", href: "#blog" },
         { name: "Certifications", href: "#certifications" },
         { name: "Contact", href: "#contact" },
     ];
@@ -30,7 +31,7 @@ export default function Navbar() {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
         >
             <div className={styles.container}>
-                <div className={styles.logo}>dandev</div>
+                <a href="#hero" className={styles.logo}>dandev</a>
                 <div className={styles.links}>
                     {navLinks.map((link) => (
                         <a key={link.name} href={link.href} className={styles.link}>

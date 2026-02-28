@@ -17,7 +17,7 @@ export default function About() {
                     transition={{ type: "spring", stiffness: 100, damping: 15 }}
                 >
                     <div className={styles.imageBox}>
-                        <span className={styles.imageText}>[ Photo Here ]</span>
+                        <span className={styles.imageText}>[ Error 404:User Cute Photo Not Found ]</span>
                     </div>
                 </motion.div>
 

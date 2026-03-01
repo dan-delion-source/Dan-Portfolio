@@ -54,6 +54,14 @@ const projects: ProjectType[] = [
         liveUrl: "#",
         image: "/projects/TechRadar.png",
     },
+    {
+        title: "Diamond Rush Web Game",
+        description: "A high-fidelity web reconstruction of the legendary J2ME classic Diamond Rush ",
+        tools: ["Next.js", "WASM", "Cheerpj", "Tailwind CSS"],
+        githubUrl: "https://github.com/dan-delion-source/Diamond-Rush-Web-APP-Revival-",
+        liveUrl: "https://diamond-rush-web-app-revival.vercel.app/",
+        image: "Media/Diamond Rush.png",
+    },
 ];
 
 export default function Projects() {

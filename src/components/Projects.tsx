@@ -40,11 +40,19 @@ const projects: ProjectType[] = [
     },
     {
         title: "Youtube Downloader",
-        description: "A simple youtube downloader web application that allows mp4 and mp3 downloads.",
-        tools: ["Typescript", "Yt-dlp", "Node.js"],
+        description: "A Youtube downloader web application that allows mp4 and mp3 downloads using Yt-dlp.",
+        tools: ["Typescript", "Yt-dlp", "Node.js", "FFmpeg"],
         githubUrl: "https://github.com/dan-delion-source/Youtube-Downloader",
         liveUrl: "https://youtube-downloader-one-tau.vercel.app/",
         image: "/projects/Youtube.png",
+    },
+    {
+        title: "Web Technology Intelligence Scanner",
+        description: "TECHRADAR is a powerful web technology fingerprinting and intelligence gathering tool",
+        tools: ["Axios", "Node.js", "Express", "Tailwind CSS"],
+        githubUrl: "https://github.com/dan-delion-source/TECHRADAR",
+        liveUrl: "#",
+        image: "/projects/TechRadar.png",
     },
 ];
 

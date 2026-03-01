@@ -60,7 +60,7 @@ const projects: ProjectType[] = [
         tools: ["Next.js", "WASM", "Cheerpj", "Tailwind CSS"],
         githubUrl: "https://github.com/dan-delion-source/Diamond-Rush-Web-APP-Revival-",
         liveUrl: "https://diamond-rush-web-app-revival.vercel.app/",
-        image: "Media/Diamond Rush.png",
+        image: "/projects/TechRadarDiamond Rush.png",
     },
 ];
 

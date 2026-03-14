@@ -62,6 +62,14 @@ const projects: ProjectType[] = [
         liveUrl: "https://diamond-rush-web-app-revival.vercel.app/",
         image: "/projects/DiamondRush.png",
     },
+    {
+        title: "Zombie Network Simulation",
+        description: "An interactive, real-time agent-based simulation of malware spreading through complex network topologies.",
+        tools: ["TypeScript", "Cytoscape.js ", "React", "Vite"],
+        githubUrl: "https://github.com/dan-delion-source/Zombie-Network-Simulation",
+        liveUrl: "https://zombie-network-simulation.vercel.app/",
+        image: "/projects/ZombieNetwork.png",
+    },
 ];
 
 export default function Projects() {

@@ -70,6 +70,14 @@ const projects: ProjectType[] = [
         liveUrl: "https://zombie-network-simulation.vercel.app/",
         image: "/projects/ZombieNetwork.png",
     },
+    {
+        title: "GitYoink",
+        description: "Terminal-based selective GitHub repository downloader, pick only the files you need, and download them all from your terminal.",
+        tools: ["Python"],
+        githubUrl: "https://github.com/dan-delion-source/GitYoink",
+        liveUrl: "#",
+        image: "/projects/GitYoink.png",
+    },
 ];
 
 export default function Projects() {

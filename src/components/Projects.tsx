@@ -27,7 +27,7 @@ const projects: ProjectType[] = [
         description: "A machine learning-based phishing URL detection system.",
         tools: ["AI/ML", "Python", "Pandas", "Numpy"],
         githubUrl: "https://github.com/dan-delion-source/AI-Based-Phishing-URL-Detection-System",
-        liveUrl: "https://ai-based-phishing-url-detection-sys.vercel.app/",
+        liveUrl: "#",
         image: "/projects/Phishing.png",
     },
     {
@@ -43,7 +43,7 @@ const projects: ProjectType[] = [
         description: "A Youtube downloader web application that allows mp4 and mp3 downloads using Yt-dlp.",
         tools: ["Typescript", "Yt-dlp", "Node.js", "FFmpeg"],
         githubUrl: "https://github.com/dan-delion-source/Youtube-Downloader",
-        liveUrl: "https://youtube-downloader-one-tau.vercel.app/",
+        liveUrl: "#",
         image: "/projects/Youtube.png",
     },
     {
@@ -114,9 +114,11 @@ export default function Projects() {
                                     <a href={project.githubUrl} target="_blank" rel="noreferrer" aria-label="GitHub">
                                         <Github className={styles.icon} size={20} />
                                     </a>
-                                    <a href={project.liveUrl} target="_blank" rel="noreferrer" aria-label="Live Demo">
-                                        <ExternalLink className={styles.icon} size={20} />
-                                    </a>
+                                    {project.liveUrl !== "#" && (
+                                        <a href={project.liveUrl} target="_blank" rel="noreferrer" aria-label="Live Demo">
+                                            <ExternalLink className={styles.icon} size={20} />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
 

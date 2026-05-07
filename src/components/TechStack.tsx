@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 import styles from "./TechStack.module.css";
 import {
     SiPython, SiJavascript, SiTypescript, SiC, SiCplusplus,
-    SiHtml5, SiCss3, SiGnubash, SiReact, SiNextdotjs, SiBootstrap,
-    SiNodedotjs, SiFlask, SiFastapi, SiTensorflow, SiTailwindcss, 
-    SiPandas, SiMysql, SiMongodb, SiFirebase, SiDocker, 
+    SiHtml5, SiCss3, SiGnubash, SiReact, SiNextdotjs,
+    SiNodedotjs, SiMysql, SiMongodb, SiFirebase, SiSupabase, SiDocker, 
     SiAmazonwebservices, SiVercel, SiJupyter,
     SiFigma, SiAdobephotoshop, SiWireshark, SiJenkins
 } from "react-icons/si";
@@ -26,16 +25,11 @@ const technologies = [
     { name: "Bash", icon: SiGnubash, color: "#4EAA25" },
     { name: "React", icon: SiReact, color: "#61DAFB" },
     { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
-    { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
     { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-    { name: "Flask", icon: SiFlask, color: "#ffffff" },
-    { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-    { name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00" },
-    { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
-    { name: "Pandas", icon: SiPandas, color: "#150458" },
     { name: "MySQL", icon: SiMysql, color: "#4479A1" },
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+    { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
     { name: "Docker", icon: SiDocker, color: "#2496ED" },
     { name: "Jenkins", icon: SiJenkins, color: "#D24939" },
     { name: "AWS", icon: SiAmazonwebservices, color: "#FF9900" },

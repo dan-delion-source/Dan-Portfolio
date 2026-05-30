@@ -70,10 +70,10 @@ export default function Blog() {
                             <BookOpen size={24} />
                         </div>
                         <h3 className={styles.postTitle}>A Begginers Guide to CTFs</h3>
-                        <p className={styles.postDate}>Coming Soon</p>
+                        <p className={styles.postDate}>2026</p>
                         <p className={styles.postDescription}>A guide to getting started with CTFs</p>
-                        <a href="#" className={styles.readMore}>
-                            No Article Yet <ArrowRight size={16} />
+                        <a href="https://guide-to-ctf-s.vercel.app/" className={styles.readMore}>
+                            Read Article <ArrowRight size={16} />
                         </a>
                     </motion.div>
                 </div>

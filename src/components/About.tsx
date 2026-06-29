@@ -53,7 +53,7 @@ export default function About() {
                             <div className={styles.iconBox}><Heart size={20} /></div>
                             <div>
                                 <h4 className={styles.itemTitle}>Interests</h4>
-                                <p className={styles.itemText}>Security, Networking, AI, Building, Exploring, Fitness</p>
+                                <p className={styles.itemText}>Penetration Testing, Networking, Web Application, Building, Exploring, Fitness </p>
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Contact.module.css";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Shield } from "lucide-react";
 
 export default function Contact() {
     return (
@@ -15,91 +15,56 @@ export default function Contact() {
                     viewport={{ once: true, amount: 0.8 }}
                     transition={{ type: "spring", stiffness: 100, damping: 15 }}
                 >
-                    Let's Connect
+                    {"Let's Connect"}
                 </motion.h2>
 
-                <div className={styles.contactGrid}>
-                    {/* Left Side: Social & Email */}
+                <div className={styles.cardContainer}>
                     <motion.div
-                        className={styles.contactInfo}
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        className={styles.contactCard}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ type: "spring", stiffness: 100, damping: 15 }}
                     >
                         <h3 className={styles.infoTitle}>Reach Out</h3>
                         <p className={styles.infoSubtitle}>
-                            I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                            {"I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions."}
                         </p>
 
                         <div className={styles.linksContainer}>
-                            <a href="mailto:contact@daniel.xyz" className={styles.contactLink}>
+                            <a href="mailto:danhneturopui@gmail.com" className={styles.contactLink}>
                                 <div className={styles.iconWrapper}><Mail size={20} /></div>
-                                <span>danhneturopui@gmail.com</span>
+                                <div className={styles.linkText}>
+                                    <span className={styles.linkLabel}>Email</span>
+                                    <span className={styles.linkVal}>danhneturopui@gmail.com</span>
+                                </div>
                             </a>
                             <a href="https://github.com/dan-delion-source" target="_blank" rel="noreferrer" className={styles.contactLink}>
                                 <div className={styles.iconWrapper}><Github size={20} /></div>
-                                <span>GitHub</span>
+                                <div className={styles.linkText}>
+                                    <span className={styles.linkLabel}>GitHub</span>
+                                    <span className={styles.linkVal}>dan-delion-source</span>
+                                </div>
                             </a>
                             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={styles.contactLink}>
                                 <div className={styles.iconWrapper}><Linkedin size={20} /></div>
-                                <span>LinkedIn</span>
+                                <div className={styles.linkText}>
+                                    <span className={styles.linkLabel}>LinkedIn</span>
+                                    <span className={styles.linkVal}>Connect on LinkedIn</span>
+                                </div>
+                            </a>
+                            <a href="https://tryhackme.com/p/danhneturopui" target="_blank" rel="noreferrer" className={styles.contactLink}>
+                                <div className={styles.iconWrapper}><Shield size={20} /></div>
+                                <div className={styles.linkText}>
+                                    <span className={styles.linkLabel}>TryHackMe</span>
+                                    <span className={styles.linkVal}>danhneturopui</span>
+                                </div>
                             </a>
                         </div>
-                    </motion.div>
-
-                    {/* Right Side: Contact Form */}
-                    <motion.div
-                        className={styles.formContainer}
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ type: "spring", stiffness: 100, damping: 15, delay: 0.1 }}
-                    >
-                        <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-                            <div className={styles.inputGroup}>
-                                <label htmlFor="name" className={styles.label}>Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    className={styles.input}
-                                    placeholder="John Doe"
-                                    required
-                                />
-                            </div>
-
-                            <div className={styles.inputGroup}>
-                                <label htmlFor="email" className={styles.label}>Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    className={styles.input}
-                                    placeholder="john@example.com"
-                                    required
-                                />
-                            </div>
-
-                            <div className={styles.inputGroup}>
-                                <label htmlFor="message" className={styles.label}>Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows={5}
-                                    className={styles.textarea}
-                                    placeholder="Hello Daniel..."
-                                    required
-                                ></textarea>
-                            </div>
-
-                            <button type="submit" className={styles.submitBtn}>
-                                Send Message
-                            </button>
-                        </form>
                     </motion.div>
                 </div>
             </div>
         </section>
     );
 }
+

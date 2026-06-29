@@ -7,11 +7,61 @@ import {
     SiHtml5, SiCss3, SiGnubash, SiReact, SiNextdotjs,
     SiNodedotjs, SiMysql, SiMongodb, SiFirebase, SiSupabase, SiDocker, 
     SiAmazonwebservices, SiVercel, SiJupyter,
-    SiFigma, SiAdobephotoshop, SiWireshark, SiJenkins
+    SiFigma, SiAdobephotoshop, SiWireshark, SiJenkins, SiSplunk,
+    SiMetasploit, SiBurpsuite
 } from "react-icons/si";
-import { FaNetworkWired, FaShieldAlt, FaMicrosoft, FaJava } from "react-icons/fa";
-import { TbTerminal2 } from "react-icons/tb";
+import { FaMicrosoft, FaJava } from "react-icons/fa";
+import { TbShieldSearch } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
+
+const WazuhIcon = ({ size, ...props }: any) => (
+    <svg 
+        viewBox="0 0 500 500" 
+        fill="currentColor" 
+        width={size || "1em"} 
+        height={size || "1em"} 
+        {...props}
+    >
+        <path 
+            d="M693.8 630.2 631 425.7h-49.7l-62.8 204.5L456 425.7h-57l91 298h46.2L606 508.1l69.7 215.6H722l91-298h-56.8l-62.4 204.5Z" 
+            transform="translate(-356, -324.7)" 
+        />
+        <circle cx="470" cy="120" r="30" fill="#3585f9" />
+    </svg>
+);
+
+const NmapIcon = ({ size, ...props }: any) => (
+    <img
+        src="/icons/nmap.svg"
+        alt="Nmap"
+        width={size || 48}
+        height={size || 48}
+        style={{ objectFit: "contain" }}
+        {...props}
+    />
+);
+
+const JohnTheRipperIcon = ({ size, ...props }: any) => (
+    <img 
+        src="/icons/john.svg" 
+        alt="John the Ripper" 
+        width={size || 48} 
+        height={size || 48} 
+        style={{ objectFit: "contain" }}
+        {...props} 
+    />
+);
+
+const HydraIcon = ({ size, ...props }: any) => (
+    <img 
+        src="/icons/hydra.svg" 
+        alt="Hydra" 
+        width={size || 48} 
+        height={size || 48} 
+        style={{ objectFit: "contain" }}
+        {...props} 
+    />
+);
 
 const technologies = [
     { name: "Python", icon: SiPython, color: "#3776AB" },
@@ -38,10 +88,15 @@ const technologies = [
     { name: "Jupyter", icon: SiJupyter, color: "#F37626" },
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     { name: "Photoshop", icon: SiAdobephotoshop, color: "#31A8FF" },
-    { name: "Nmap", icon: FaNetworkWired, color: "#1d1d1d" },
+    { name: "Nmap", icon: NmapIcon, color: "#7B79F5" },
     { name: "Wireshark", icon: SiWireshark, color: "#1679A7" },
-    { name: "Metasploit", icon: TbTerminal2, color: "#1282ec" },
-    { name: "Burp Suite", icon: FaShieldAlt, color: "#FF6633" },
+    { name: "Metasploit", icon: SiMetasploit, color: "#2596CD" },
+    { name: "Burp Suite", icon: SiBurpsuite, color: "#FF6633" },
+    { name: "Splunk", icon: SiSplunk, color: "#FF6600" },
+    { name: "Wazuh", icon: WazuhIcon, color: "#3585f9" },
+    { name: "SIEM", icon: TbShieldSearch, color: "#6366F1" },
+    { name: "John the Ripper", icon: JohnTheRipperIcon, color: "#fc4" },
+    { name: "Hydra", icon: HydraIcon, color: "#00E676" },
     { name: "MS Office", icon: FaMicrosoft, color: "#D83B01" },
 ];
 

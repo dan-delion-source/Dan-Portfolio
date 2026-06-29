@@ -91,7 +91,7 @@
 .iconBox {
     background-color: var(--box-bg);
     border: 1px solid var(--border);
-    padding: 0.6rem;
+    padding: 0.7rem;
     border-radius: 8px;
     color: var(--accent);
     display: flex;

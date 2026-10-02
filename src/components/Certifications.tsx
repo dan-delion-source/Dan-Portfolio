@@ -12,6 +12,11 @@ type CertificationType = {
 
 const certifications: CertificationType[] = [
     {
+        name: "Security+",
+        issuer: "CompTIA",
+        year: "2026",
+    },
+    {
         name: "Ethical Hacking Essentials",
         issuer: "EC-Council",
         year: "2026",

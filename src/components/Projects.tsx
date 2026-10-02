@@ -78,6 +78,14 @@ const projects: ProjectType[] = [
         liveUrl: "#",
         image: "/projects/GitYoink.png",
     },
+    {
+        title: "Nyae",
+        description: "NYAE is an interactive camera experience that masquerades as a serious biometric scanning booth, then turns a short sequence of pose captures into an intentionally over-the-top kawaii cat video.",
+        tools: ["Javascript", "MediaPipe"],
+        githubUrl: "https://github.com/dan-delion-source/Cat-Fished-Scanner",
+        liveUrl: "https://facialscanner.vercel.app/",
+        image: "/projects/facialscanner.png",
+    },
 ];
 
 export default function Projects() {

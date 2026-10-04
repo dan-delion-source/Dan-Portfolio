@@ -13,17 +13,6 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const navLinks = [
-        { name: "Home", href: "#hero" },
-        { name: "About Me", href: "#about" },
-        { name: "Tech Stack", href: "#tech-stack" },
-        { name: "Experience", href: "#experience" },
-        { name: "Projects", href: "#projects" },
-        { name: "Blog", href: "#blog" },
-        { name: "Certifications", href: "#certifications" },
-        { name: "Contact", href: "#contact" },
-    ];
-
     return (
         <motion.nav
             className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}
@@ -33,13 +22,13 @@ export default function Navbar() {
         >
             <div className={styles.container}>
                 <a href="#hero" className={styles.logo}>Dan</a>
-                <div className={styles.links}>
-                    {navLinks.map((link) => (
-                        <a key={link.name} href={link.href} className={styles.link}>
-                            {link.name}
-                        </a>
-                    ))}
-                </div>
+                <a
+                    href="/Resume/Daniel%20Resume.pdf"
+                    download="Daniel Resume.pdf"
+                    className={styles.resumeLink}
+                >
+                    Download Resume
+                </a>
             </div>
         </motion.nav>
     );

@@ -32,7 +32,7 @@ export default function Navbar() {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
         >
             <div className={styles.container}>
-                <a href="#hero" className={styles.logo}>dandev</a>
+                <a href="#hero" className={styles.logo}>Dan</a>
                 <div className={styles.links}>
                     {navLinks.map((link) => (
                         <a key={link.name} href={link.href} className={styles.link}>

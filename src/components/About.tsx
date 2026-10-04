@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import styles from "./About.module.css";
-import { User, GraduationCap, Briefcase, Heart } from "lucide-react";
+import { GraduationCap, Briefcase, Heart } from "lucide-react";
+import ProfileGlitch from "./ProfileGlitch";
 
 export default function About() {
     return (
@@ -16,9 +17,7 @@ export default function About() {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ type: "spring", stiffness: 100, damping: 15 }}
                 >
-                    <div className={styles.imageBox}>
-                        <span className={styles.imageText}>[ Error 404:Photo Not Found ]</span>
-                    </div>
+                    <ProfileGlitch />
                 </motion.div>
 
                 {/* Right Side: Clean Text */}
@@ -31,7 +30,7 @@ export default function About() {
                 >
                     <h2 className={styles.heading}>About Me</h2>
                     <p className={styles.description}>
-                        Hello! I'm Daniel Hneturopui, a dedicated Developer and Cybersecurity Specialist. I blend my passion for writing clean, efficient code with a robust understanding of system security to build applications that are not just highly functional, but comprehensively secure from the ground up.
+                        Hello! I&apos;m Daniel Hneturopui, a dedicated Developer and Cybersecurity Specialist. I blend my passion for writing clean, efficient code with a robust understanding of system security to build applications that are not just highly functional, but comprehensively secure from the ground up.
                     </p>
 
                     <div className={styles.list}>

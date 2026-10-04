@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Daniel Hneturopui - Developer & Cybersecurity Specialist",
   description: "Portfolio of Daniel Hneturopui - Developer and Cybersecurity Specialist. Showcasing projects, skills, and certifications.",
+  icons: {
+    icon: "/mascot.png",
+    shortcut: "/mascot.png",
+    apple: "/mascot.png",
+  },
 };
 
 export default function RootLayout({
